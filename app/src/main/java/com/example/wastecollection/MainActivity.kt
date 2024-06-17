@@ -207,29 +207,56 @@ fun MainScreen(navController: NavHostController) {
 @Composable
 fun Interface1() {
     Text(
-        text = "Cliquez sur la poubelle pour faire un choix",
+        text = "Cette entreprise se spécialise dans la collecte régulière des déchets " +
+                "ménagers auprès des particuliers et des petits commerces. " +
+                "Ses équipes formées assurent une collecte fiable et le respect des normes environnementales.",
         style = MaterialTheme.typography.labelSmall
     )
 }
 
 @Composable
 fun Interface2() {
-    // Contenu de l'interface 2
+    Text(
+        text = "  Collecte et recyclage des déchets organiques :\n" +
+                "Spécialisée dans la collecte et le recyclage des déchets organiques " +
+                "tels que les restes alimentaires et les déchets de jardin, cette entreprise " +
+                "propose des solutions de compostage pour réduire l'impact environnemental."
+    )
+
 }
 
 @Composable
 fun Interface3() {
-    // Contenu de l'interface 3
+    Text(
+        text = " Collecte et élimination des déchets dangereux :\n" +
+                "Cette entreprise gère la collecte et l'élimination sécurisée des déchets dangereux " +
+                "comme les produits chimiques, les piles et les médicaments." +
+                " Elle garantit la conformité aux réglementations en vigueur."
+    )
+
 }
 
 @Composable
 fun Interface4() {
-    // Contenu de l'interface 4
+    Text(
+        text = " Collecte et recyclage des déchets de construction :\n" +
+                "    Spécialisée dans la collecte et le recyclage des déchets de construction et " +
+                "de démolition, cette entreprise propose des solutions de valorisation des matériaux " +
+                "pour réduire les déchets.\n"
+
+    )
 }
 
 @Composable
 fun Interface5() {
-    // Contenu de l'interface 5
+    Text(
+        text = " Collecte et élimination des déchets industriels :\n" +
+                "Cette entreprise offre des services de collecte et " +
+                "d'élimination sûre des déchets industriels dans le respect des normes environnementales." +
+                " Elle travaille en étroite collaboration avec les entreprises pour personnaliser ses services."
+
+    )
+
 }
 
 @Composable
