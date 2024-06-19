@@ -44,6 +44,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     WasteApp()
+
                 }
             }
         }
@@ -112,9 +113,9 @@ fun DetailsScreen() {
 
 @Preview(showBackground = true)
 
-@Preview(showBackground = true)
 @Composable
 fun MainScreenPreview() {
+    WasteApp()
 
     val navController = rememberNavController()
     MainScreen(navController)
@@ -126,7 +127,7 @@ fun MainScreenPreview() {
 @Composable
 fun GreetingPreview() {
     WasteCollectionTheme {
-
+        WasteApp()
     }
 }
 
@@ -210,7 +211,7 @@ fun Interface1() {
         text = "Cette entreprise se spécialise dans la collecte régulière des déchets " +
                 "ménagers auprès des particuliers et des petits commerces. " +
                 "Ses équipes formées assurent une collecte fiable et le respect des normes environnementales.",
-        style = MaterialTheme.typography.labelSmall
+
     )
 }
 
@@ -254,7 +255,6 @@ fun Interface5() {
                 "Cette entreprise offre des services de collecte et " +
                 "d'élimination sûre des déchets industriels dans le respect des normes environnementales." +
                 " Elle travaille en étroite collaboration avec les entreprises pour personnaliser ses services."
-
     )
 
 }
