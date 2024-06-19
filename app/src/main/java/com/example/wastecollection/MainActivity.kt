@@ -8,13 +8,17 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+
 import androidx.compose.foundation.layout.Column
+
 import androidx.compose.foundation.layout.Row
+
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -31,6 +35,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.wastecollection.R.drawable
+import com.example.wastecollection.R.drawable.*
 import com.example.wastecollection.ui.theme.WasteCollectionTheme
 
 class MainActivity : ComponentActivity() {
@@ -43,6 +49,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+                    MyApp()
                     WasteApp()
 
                 }
@@ -85,20 +92,25 @@ fun MainScreen1(navController: NavController) {
             modifier = Modifier.clickable { navController.navigate("details") }
         ) {
             Text(
-                text = "Bienvenue sur Waste",
-                style = MaterialTheme.typography.headlineMedium
+                text = "Bienvenue sur WasteCollection",
+                style = MaterialTheme.typography.headlineMedium,
+                color = Color.Black
             )
             Spacer(modifier = Modifier.height(16.dp))
             Image(
-                painter = painterResource(id = R.drawable.photo1),
+                painter = painterResource(id = lescartesdechets),
                 contentDescription = "Poubelle",
                 modifier = Modifier.size(200.dp),
-                contentScale = ContentScale.Crop
+                contentScale = ContentScale.Crop,
+
+
             )
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier
+                .height(16.dp))
             Text(
                 text = "Cliques sur la poubelle pour faire un choir",
-                style = MaterialTheme.typography.labelSmall
+                style = MaterialTheme.typography.labelSmall,
+                color = Color.Black
             )
         }
     }
@@ -144,7 +156,7 @@ fun MainScreen(navController: NavHostController) {
 
         ) {
             Image(
-                painter = painterResource(id = R.drawable.photo1),
+                painter = painterResource(id = accueil),
                 contentDescription = "Photo 1",
                 modifier = Modifier
 
@@ -154,7 +166,7 @@ fun MainScreen(navController: NavHostController) {
                     .size(width = 200.dp, height = 200.dp)
             )
             Image(
-                painter = painterResource(id = R.drawable.photo2),
+                painter = painterResource(id = choix),
                 contentDescription = "Photo 2",
                 modifier = Modifier
                     .clickable {
@@ -168,7 +180,7 @@ fun MainScreen(navController: NavHostController) {
 
         ) {
             Image(
-                painter = painterResource(id = R.drawable.photo3),
+                painter = painterResource(id = tri),
                 contentDescription = "Photo 3",
                 modifier = Modifier
                     .clickable {
@@ -177,7 +189,7 @@ fun MainScreen(navController: NavHostController) {
                     .size(width = 200.dp, height = 200.dp)
             )
             Image(
-                painter = painterResource(id = R.drawable.photo4),
+                painter = painterResource(id = lescartesdechets),
                 contentDescription = "Photo 4",
                 modifier = Modifier
                     .clickable {
@@ -191,7 +203,7 @@ fun MainScreen(navController: NavHostController) {
 
         ) {
             Image(
-                painter = painterResource(id = R.drawable.photo5),
+                painter = painterResource(id = commande),
                 contentDescription = "Photo 5",
                 modifier = Modifier
                     .clickable {
@@ -207,56 +219,98 @@ fun MainScreen(navController: NavHostController) {
 
 @Composable
 fun Interface1() {
-    Text(
-        text = "Cette entreprise se spécialise dans la collecte régulière des déchets " +
-                "ménagers auprès des particuliers et des petits commerces. " +
-                "Ses équipes formées assurent une collecte fiable et le respect des normes environnementales.",
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
 
-    )
+        Text(
+
+            text = "Cette entreprise se spécialise dans la collecte régulière des déchets " +
+                    "ménagers auprès des particuliers et des petits commerces. " +
+                    "Ses équipes formées assurent une collecte fiable et le respect des normes environnementales.",
+            // style = MaterialTheme.typography.headlineMedium,
+            //color = Color.Black
+
+
+        )
+    }
 }
 
 @Composable
 fun Interface2() {
-    Text(
-        text = "  Collecte et recyclage des déchets organiques :\n" +
-                "Spécialisée dans la collecte et le recyclage des déchets organiques " +
-                "tels que les restes alimentaires et les déchets de jardin, cette entreprise " +
-                "propose des solutions de compostage pour réduire l'impact environnemental."
-    )
+    Column(
+        modifier = Modifier.fillMaxSize(),
+       horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+
+        Text(
+            text = "  Collecte et recyclage des déchets organiques :\n" +
+                    "Spécialisée dans la collecte et le recyclage des déchets organiques " +
+                    "tels que les restes alimentaires et les déchets de jardin, cette entreprise " +
+                    "propose des solutions de compostage pour réduire l'impact environnemental."
+
+
+        )
+
+    }
+
+
 
 }
 
 @Composable
 fun Interface3() {
-    Text(
-        text = " Collecte et élimination des déchets dangereux :\n" +
-                "Cette entreprise gère la collecte et l'élimination sécurisée des déchets dangereux " +
-                "comme les produits chimiques, les piles et les médicaments." +
-                " Elle garantit la conformité aux réglementations en vigueur."
-    )
+    Image(painter = painterResource (nouriture), contentDescription =null )
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+        Text(
+            text = " Collecte et élimination des déchets dangereux :\n" +
+                    "Cette entreprise gère la collecte et l'élimination sécurisée des déchets dangereux " +
+                    "comme les produits chimiques, les piles et les médicaments." +
+                    " Elle garantit la conformité aux réglementations en vigueur."
+        )
 
+    }
 }
 
 @Composable
 fun Interface4() {
-    Text(
-        text = " Collecte et recyclage des déchets de construction :\n" +
-                "    Spécialisée dans la collecte et le recyclage des déchets de construction et " +
-                "de démolition, cette entreprise propose des solutions de valorisation des matériaux " +
-                "pour réduire les déchets.\n"
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+        Text(
+            text = " Collecte et recyclage des déchets de construction :\n" +
+                    "    Spécialisée dans la collecte et le recyclage des déchets de construction et " +
+                    "de démolition, cette entreprise propose des solutions de valorisation des matériaux " +
+                    "pour réduire les déchets.\n"
 
-    )
+        )
+    }
 }
 
 @Composable
 fun Interface5() {
-    Text(
-        text = " Collecte et élimination des déchets industriels :\n" +
-                "Cette entreprise offre des services de collecte et " +
-                "d'élimination sûre des déchets industriels dans le respect des normes environnementales." +
-                " Elle travaille en étroite collaboration avec les entreprises pour personnaliser ses services."
-    )
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+        Text(
+            text = " Collecte et élimination des déchets industriels :\n" +
+                    "Cette entreprise offre des services de collecte et " +
+                    "d'élimination sûre des déchets industriels dans le respect des normes environnementales." +
+                    " Elle travaille en étroite collaboration avec les entreprises pour personnaliser ses services."
+        )
 
+    }
 }
 
 @Composable
