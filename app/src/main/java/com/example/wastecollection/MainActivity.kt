@@ -18,6 +18,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -96,7 +98,10 @@ fun MainScreen1(navController: NavController) {
                 style = MaterialTheme.typography.headlineMedium,
                 color = Color.Black
             )
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(
+                modifier = Modifier
+                    .height(16.dp)
+            )
             Image(
                 painter = painterResource(id = lescartesdechets),
                 contentDescription = "Poubelle",
@@ -108,7 +113,7 @@ fun MainScreen1(navController: NavController) {
             Spacer(modifier = Modifier
                 .height(16.dp))
             Text(
-                text = "Cliques sur la poubelle pour faire un choir",
+                text = "Cliques sur l'image  pour faire un choix sur le services ",
                 style = MaterialTheme.typography.labelSmall,
                 color = Color.Black
             )
@@ -145,51 +150,91 @@ fun GreetingPreview() {
 
 @Composable
 fun MainScreen(navController: NavHostController) {
+    Image(painter = painterResource (images__8_), contentDescription =null )
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp),
+            .padding(16.dp)
+            .verticalScroll(rememberScrollState())
+
+        ,
         verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Row(
+        horizontalAlignment = Alignment.CenterHorizontally,
 
         ) {
-            Image(
-                painter = painterResource(id = accueil),
-                contentDescription = "Photo 1",
-                modifier = Modifier
+        
 
-                    .clickable {
-                        navController.navigate("interface1")
-                    }
-                    .size(width = 200.dp, height = 200.dp)
-            )
-            Image(
-                painter = painterResource(id = choix),
-                contentDescription = "Photo 2",
-                modifier = Modifier
-                    .clickable {
-                        navController.navigate("interface2")
-                    }
-                    .size(width = 200.dp, height = 200.dp)
-            )
+            Column {
+
+                Text(
+                    text = "ÉCO-COLLECTE",
+                    color = Color.Black
+                )
+
+                Image(
+                    painter = painterResource(id = images__10_),
+                    contentDescription = "Photo 1",
+                    modifier = Modifier
+
+                        .clickable {
+                            navController.navigate("interface1")
+                        }
+                        .size(width = 200.dp, height = 200.dp)
+                )
+            }
+
+            Spacer(modifier = Modifier.padding(16.dp))
+
+            Column {
+                Text(
+                    text = "BIO - RECYCLE",
+                    color = Color.Black
+                )
+
+                Image(
+                    painter = painterResource(id = choix),
+                    contentDescription = "Photo 2",
+                    modifier = Modifier
+                        .clickable {
+                            navController.navigate("interface2")
+                        }
+                        .size(width = 200.dp, height = 200.dp)
+                )
+
 
         }
-        Row(
+        Spacer(modifier = Modifier.padding(16.dp))
 
-        ) {
-            Image(
-                painter = painterResource(id = tri),
-                contentDescription = "Photo 3",
-                modifier = Modifier
-                    .clickable {
-                        navController.navigate("interface3")
-                    }
-                    .size(width = 200.dp, height = 200.dp)
+            Column {
+                Text(
+
+                    text = "COMPST-PLUS",
+                    color = Color.Black
+                )
+
+                Image(
+                    painter = painterResource(id = images__14_),
+                    contentDescription = "Photo 3",
+                    modifier = Modifier
+                        .clickable {
+                            navController.navigate("interface3")
+                        }
+                        .size(width = 200.dp, height = 200.dp)
+                )
+
+
+        }
+        Spacer(modifier = Modifier.padding(16.dp))
+
+
+        Column {
+
+            Text(
+                text ="RENOV - RECYCLAGE",
+                color = Color.Black
             )
             Image(
-                painter = painterResource(id = lescartesdechets),
+                painter = painterResource(id = recycling_symbol2_svg),
                 contentDescription = "Photo 4",
                 modifier = Modifier
                     .clickable {
@@ -197,22 +242,28 @@ fun MainScreen(navController: NavHostController) {
                     }
                     .size(width = 200.dp, height = 200.dp)
             )
+        }
+        Spacer(modifier = Modifier.padding(16.dp))
+
+            Column {
+                Text(
+                    text = "INDUS-COLLECTE",
+                    color = Color.Black
+
+                )
+                Image(
+                    painter = painterResource(id = images__9_),
+                    contentDescription = "Photo 5",
+                    modifier = Modifier
+                        .clickable {
+                            navController.navigate("interface5")
+                        }
+                        .size(width = 200.dp, height = 200.dp)
+                )
+            }
 
         }
-        Row(
 
-        ) {
-            Image(
-                painter = painterResource(id = commande),
-                contentDescription = "Photo 5",
-                modifier = Modifier
-                    .clickable {
-                        navController.navigate("interface5")
-                    }
-                    .size(width = 200.dp, height = 200.dp)
-            )
-        }
-    }
 
 }
 
@@ -227,11 +278,13 @@ fun Interface1() {
 
         Text(
 
-            text = "Cette entreprise se spécialise dans la collecte régulière des déchets " +
-                    "ménagers auprès des particuliers et des petits commerces. " +
-                    "Ses équipes formées assurent une collecte fiable et le respect des normes environnementales.",
-            // style = MaterialTheme.typography.headlineMedium,
-            //color = Color.Black
+            text = " ce service est Spécialisée dans la collecte régulière des déchets ménagers auprès des particuliers " +
+                    "et des petits commerces. " +
+                    "Elle assure une collecte fiable et respecte les normes environnementales. et voici les services:" +
+                    "- Possibilité de collecte à des heures flexibles pour s'adapter aux besoins des clients\n" +
+                    " - Utilisation de véhicules électriques ou hybrides pour réduire l'empreinte carbone\n" +
+                    " - Programmes de sensibilisation auprès des clients sur les bonnes pratiques de tri et de réduction des déchets",
+            color = Color.Black
 
 
         )
@@ -240,6 +293,7 @@ fun Interface1() {
 
 @Composable
 fun Interface2() {
+    Image(painter = painterResource (images__8_), contentDescription =null )
     Column(
         modifier = Modifier.fillMaxSize(),
        horizontalAlignment = Alignment.CenterHorizontally,
@@ -247,33 +301,27 @@ fun Interface2() {
     ) {
 
         Text(
+
             text = "  Collecte et recyclage des déchets organiques :\n" +
                     "Spécialisée dans la collecte et le recyclage des déchets organiques " +
                     "tels que les restes alimentaires et les déchets de jardin, cette entreprise " +
                     "propose des solutions de compostage pour réduire l'impact environnemental."
-
-
         )
-
     }
-
-
-
 }
 
 @Composable
 fun Interface3() {
-    Image(painter = painterResource (nouriture), contentDescription =null )
+    Image(painter = painterResource (images__8_), contentDescription =null )
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = " Collecte et élimination des déchets dangereux :\n" +
-                    "Cette entreprise gère la collecte et l'élimination sécurisée des déchets dangereux " +
-                    "comme les produits chimiques, les piles et les médicaments." +
-                    " Elle garantit la conformité aux réglementations en vigueur."
+            text = " - Mise en place de bacs de compostage individuels ou collectifs pour les clients\n" +
+                    " - Formations et conseils sur le compostage à domicile\n" +
+                    " - Possibilité de récupérer le compost produit par les clients\n"
         )
 
     }
@@ -281,16 +329,17 @@ fun Interface3() {
 
 @Composable
 fun Interface4() {
+    Image(painter = painterResource (images__10_), contentDescription =null )
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = " Collecte et recyclage des déchets de construction :\n" +
-                    "    Spécialisée dans la collecte et le recyclage des déchets de construction et " +
-                    "de démolition, cette entreprise propose des solutions de valorisation des matériaux " +
-                    "pour réduire les déchets.\n"
+            text = " Le services de Rénov-Recyclage vous proposez plusieurs fonction pour trie vos dechets : " +
+                    " - Propositions de solutions de tri et de valorisation sur les chantiers\n" +
+                    " - Services de déconstruction sélective pour maximiser le recyclage\n" +
+                    " - Remise de rapports détaillés sur le taux de recyclage atteint"
 
         )
     }
@@ -298,16 +347,23 @@ fun Interface4() {
 
 @Composable
 fun Interface5() {
+    Image(painter = painterResource (images__8_), contentDescription =null )
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = " Collecte et élimination des déchets industriels :\n" +
+            text = "Indus-Collecte est un services specialiser dans " +
+                    "Collecte et élimination des déchets industriels :\n" +
                     "Cette entreprise offre des services de collecte et " +
                     "d'élimination sûre des déchets industriels dans le respect des normes environnementales." +
-                    " Elle travaille en étroite collaboration avec les entreprises pour personnaliser ses services."
+                    " Elle travaille en étroite collaboration avec les entreprises pour personnaliser ses services." +
+                    "et voici le services :  " +
+                    "1- Conseillers dédiés pour accompagner les entreprises dans la gestion de leurs déchets\n" +
+                    "2- Possibilité de collecte en dehors des heures ouvrées pour minimiser les perturbations\n" +
+                    "3- Mise en place d'indicateurs de performance environnementale pour les clients",
+            color = Color.Black
         )
 
     }
