@@ -381,7 +381,8 @@ fun Interface1() {
                 )
             }
 
-            Spacer(modifier = Modifier.height(16.dp))
+
+            Spacer(modifier = Modifier.height(200.dp))
 
             // Texte descriptif de l'éco-collecte
             Text(
@@ -413,348 +414,353 @@ fun Interface1() {
 
     @Composable
     fun Interface2() {
-        //Image(painter = painterResource (images__8_), contentDescription =null )
-        Column(
-            modifier = Modifier.fillMaxSize(),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center
-        ) {
-            Box(
-                modifier = Modifier
-                    .size(200.dp)
-                    .background(
-                        color = Color(0xFF4CAF50), // Vert écologique
-                        shape = RoundedCornerShape(16.dp) // Coins arrondis
-                    ),
-                contentAlignment = Alignment.Center
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(color = Color(0xFFF2F2F2)) // Fond gris clair
+        )
+
+            Column(
+                modifier = Modifier.fillMaxSize(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
             ) {
-                Image(
-                    painter = painterResource(id = images__5_),
-                    contentDescription = "Image de l'éco-collecte",
-                    modifier = Modifier.size(200.dp) // Ajuster la taille de l'image selon vos besoins
-                )
-            }
-                Spacer(modifier = Modifier.height(16.dp))
                 Box(
                     modifier = Modifier
-                        .fillMaxSize()
-                        .verticalScroll(rememberScrollState())
+                        .size(200.dp)
+                        .background(
+                            color = Color(0xFF4CAF50), // Vert écologique
+                            shape = RoundedCornerShape(16.dp) // Coins arrondis
+                        ),
+                    contentAlignment = Alignment.Center
                 ) {
-                    Text(
-
-                        text = "Le bio-recyclage joue donc un rôle essentiel dans la gestion durable des déchets en valorisant les ressources organiques tout en réduisant leur impact environnemental." +
-                                "Les raisons importantes pour le bio-recyclage sont les suivantes :" +
-                                "A.Réduction des déchets organiques enfouis :\n" +
-                                "1.Les déchets organiques comme les restes alimentaires et les déchets de jardin représentent une part importante des déchets ménagers.\n" +
-                                "2.Leur enfouissement en décharge contribue à la production de méthane, un gaz à effet de serre puissant.\n" +
-                                "3.Le bio-recyclage permet de détourner ces déchets organiques des sites d'enfouissement.\n" +
-                                "" +
-                                "B.alorisation des déchets organiques :\n" +
-                                "1.Par le compostage ou la méthanisation, les déchets organiques sont transformés en ressources utiles.\n" +
-                                "2.Le compost produit peut être utilisé pour fertiliser les sols et améliorer la qualité des terres agricoles ou des espaces verts.\n" +
-                                "3.Le biogaz issu de la méthanisation peut être valorisé pour produire de l'énergie renouvelable.\n" +
-                                "" +
-                                "C.Économie circulaire et réduction des impacts :\n" +
-                                "1.Le bio-recyclage s'inscrit dans une logique d'économie circulaire, en réintégrant les nutriments des déchets organiques dans les cycles naturels.\n" +
-                                "2.Cela permet de réduire les besoins en engrais chimiques et les impacts liés à leur production.\n" +
-                                "3.De plus, le traitement des déchets organiques par compostage ou méthanisation a un impact environnemental moindre que l'enfouissement ou l'incinération.\n" +
-                                "" +
-                                "Les principaux types de déchets traités par le bio-recyclage sont :\n" +
-                                "\n" +
-                                "1.Restes alimentaires :\n" +
-                                "2.Restes de repas, fruits et légumes, épluchures, etc.\n" +
-                                "3.Déchets de jardin :\n" +
-                                "4.Tonte de pelouse, feuilles mortes, branches, fleurs fanées, etc.\n" +
-                                "5.Autres déchets organiques :\n" +
-                                "6.Sciures de bois, litières animales, etc.",
-                        color = Color.Black,
-                        fontFamily = FontFamily.Default,
-                        textAlign = TextAlign.Justify
-
+                    Image(
+                        painter = painterResource(id = images__5_),
+                        contentDescription = "Image de l'éco-collecte",
+                        modifier = Modifier.size(180.dp) // Ajuster la taille de l'image selon vos besoins
                     )
                 }
-            }
-        }
-
-
-    @Composable
-    fun Interface3() {
-        // Image(painter = painterResource (images__8_), contentDescription =null )
-        Column(
-            modifier = Modifier.fillMaxSize(),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center
-        ) {
-            Box(
-                modifier = Modifier
-                    .size(200.dp)
-                    .background(
-                        color = Color(0xFF4CAF50), // Vert écologique
-                        shape = RoundedCornerShape(16.dp) // Coins arrondis
-                    ),
-                contentAlignment = Alignment.Center
-            ) {
-                Image(
-                    painter = painterResource(id = images__7_),
-                    contentDescription = "Image de l'éco-collecte",
-                    modifier = Modifier.size(200.dp) // Ajuster la taille de l'image selon vos besoins
-                )
-            }
-                Spacer(modifier = Modifier.height(16.dp))
-                Box(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .verticalScroll(rememberScrollState())
-                ) {
-                    Text(
-                        text = "Le COMPST-PLUS permet donc de valoriser localement les déchets organiques en produisant un compost de qualité, tout en favorisant l'implication et la sensibilisation des citoyens." +
-                                "Voici les raisons importantes pour le service de compost+ et les types de déchets qu'il traite :\n" +
-                                "\n" +
-                                "Raisons importantes du compost-plus :\n" +
-                                "\n" +
-                                "A.compostage de proximité :\n" +
-                                "" +
-                                "1.Le compost+ permet aux citoyens de composter leurs déchets organiques à l'échelle locale, dans leur quartier ou leur communauté.\n" +
-                                "" +
-                                "2.Cela réduit les coûts et l'impact environnemental liés au transport des déchets vers des sites de compostage centralisés.\n" +
-                                "" +
-                                "B.Production de compost de qualité :\n" +
-                                "" +
-                                "1.Le compost+ valorise les déchets organiques en produisant du compost de haute qualité, adapté aux besoins des espaces verts et de l'agriculture urbaine.\n" +
-                                "" +
-                                "2.Ce compost local peut être facilement réinjecté dans les cycles de production alimentaire et d'entretien des espaces verts de proximité.\n" +
-                                "" +
-                                "C.Sensibilisation et éducation :\n" +
-                                "" +
-                                "1.Le compost+ implique directement les citoyens dans le processus de gestion des déchets organiques.\n" +
-                                "" +
-                                "2.Cela permet de les sensibiliser à l'importance du compostage et de l'économie circulaire.\n" +
-                                "" +
-                                "Types de déchets traités par le compost-plus :\n" +
-                                "\n" +
-                                "1.Restes alimentaires :\n" +
-                                "" +
-                                "2.Épluchures, restes de repas, fruits et légumes\n" +
-                                "" +
-                                "3.Exclusion des viandes, poi2ssons et produits laitiers\n" +
-                                "" +
-                                "4.Déchets de jardin :\n" +
-
-                                "" +
-                                "5.Tonte de pelouse, feuilles mortes, fleurs fanées\n" +
-                                "" +
-                                "6.Petits branchages et résidus de taille\n" +
-                                "" +
-                                "D.Autres déchets organiques :\n" +
-                                "" +
-                                "1.Serviettes en papier, mouchoirs\n" +
-                                "" +
-                                "2.Litières végétales pour animaux",
-                        color = Color.Black,
-                        fontFamily = FontFamily.Default,
-                        textAlign = TextAlign.Justify
-                    )
-                }
-            }
-        }
-
-
-    @Composable
-    fun Interface4() {
-        //Image(painter = painterResource (images__10_), contentDescription =null )
-        Column(
-            modifier = Modifier.fillMaxSize(),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center
-        ) {
-            Box(
-                modifier = Modifier
-                    .size(200.dp)
-                    .background(
-                        color = Color(0xFF4CAF50), // Vert écologique
-                        shape = RoundedCornerShape(16.dp) // Coins arrondis
-                    ),
-                contentAlignment = Alignment.Center
-            ) {
-
-                Image(
-                    painter = painterResource(id = images__2_),
-                    contentDescription = "Image de l'éco-collecte",
-                    modifier = Modifier.size(200.dp) // Ajuster la taille de l'image selon vos besoins
-                )
-                Spacer(modifier = Modifier.height(16.dp))
-                Box(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .verticalScroll(rememberScrollState())
-                ) {
-                    Text(
-                        text = "Le Rénov-recyclage joue donc un rôle essentiel dans la gestion durable des déchets du secteur de la construction et de la rénovation, en favorisant le réemploi et le recyclage des matériaux." +
-                                "" +
-                                "Voici les raisons importantes pour le service de Rénov-recyclage et les types de déchets qu'il traite :\n" +
-                                "\n" +
-                                "Raisons importantes du Rénov-recyclage :\n" +
-                                "\n" +
-                                "A.Détournement des déchets de construction et rénovation des sites d'enfouissement :\n" +
-                                "1.Les déchets de construction et de rénovation représentent une part importante des déchets générés.\n" +
-                                "2.Leur enfouissement en décharge occupe beaucoup d'espace et a un impact environnemental élevé.\n" +
-                                "3.Le Rénov-recyclage permet de les récupérer et de les valoriser.\n" +
-                                "" +
-                                "" +
-                                "B.Réintégration des matériaux dans de nouveaux produits :\n" +
-                                "" +
-                                "" +
-                                "1.Les matériaux récupérés sont triés, transformés et réintégrés dans la production de nouveaux produits.\n" +
-                                "" +
-                                "2.Cela permet de réduire l'utilisation de matières premières vierges et s'inscrit dans une logique d'économie circulaire.\n" +
-                                "" +
-                                "" +
-                                "C.Optimisation de l'utilisation des ressources :\n" +
-                                "" +
-                                "1.Le Rénov-recyclage favorise une meilleure gestion et une valorisation des ressources issues du secteur de la construction.\n" +
-                                "" +
-                                "2.Cela contribue à l'utilisation durable des matériaux et à la réduction des déchets.\n" +
-                                "" +
-                                "Types de déchets traités par le Rénov-recyclage :\n" +
-                                "\n" +
-                                "A.Matériaux de construction :\n" +
-                                "" +
-                                "1.Bois (poutrelles, planches, contreplaqué, etc.)\n" +
-                                "" +
-                                "2.Métaux (ferreux et non ferreux)\n" +
-                                "" +
-                                "3.Plastiques (tuyaux, profilés, etc.)\n" +
-                                "" +
-                                "4.Carrelages, céramiques, tuiles\n" +
-                                "" +
-                                "B.Matériaux de rénovation :\n" +
-                                "" +
-                                "1.Fenêtres, portes, parquets\n" +
-                                "" +
-                                "2.Isolants (laine de verre, polystyrène, etc.)\n" +
-                                "" +
-                                "3.Plâtre, cloisons sèches\n" +
-                                "" +
-                                "4.Câbles électriques\n" +
-                                "" +
-                                "C.Autres déchets de chantier :\n" +
-                                "" +
-                                "1.Gravats, sables, terres\n" +
-                                "" +
-                                "2.Emballages (cartons, films plastiques) ",
-                        color = Color.Black,
-                        fontFamily = FontFamily.Default,
-                        textAlign = TextAlign.Justify
-
-                    )
-                }
-            }
-        }
-    }
-
-    @Composable
-    fun Interface5() {
-        // Image(painter = painterResource (images__8_), contentDescription =null )
-        Column(
-            modifier = Modifier.fillMaxSize(),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center
-        ) {
-            Box(
-                modifier = Modifier
-                    .size(200.dp)
-                    .background(
-                        color = Color(0xFF4CAF50), // Vert écologique
-                        shape = RoundedCornerShape(16.dp) // Coins arrondis
-                    ),
-                contentAlignment = Alignment.Center
-            ) {
-
-                Image(
-                    painter = painterResource(id = images__9_),
-                    contentDescription = "Image de l'éco-collecte",
-                    modifier = Modifier.size(200.dp) // Ajuster la taille de l'image selon vos besoins
-                )
                 Spacer(modifier = Modifier.height(16.dp))
 
-                Box(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .verticalScroll(rememberScrollState())
-                ) {
-                    Text(
-                        text = "Indus-Collecte joue donc un rôle essentiel dans la gestion responsable et durable des déchets industriels, en assurant leur collecte, leur tri et leur orientation vers les filières de valorisation ou d'élimination adaptées." +
-                                " Voici les raisons importantes du service Indus-Collecte et les types de déchets qu'il traite :\n" +
-                                "\n" +
-                                "Raisons importantes d'Indus-Collecte :\n" +
-                                "\n" +
-                                "" +
-                                "" +
-                                "A.Collecte spécialisée des déchets industriels :\n" +
-                                "" +
-                                "1.Les déchets industriels nécessitent une gestion particulière en raison de leur nature et de leur volume.\n" +
-                                "" +
-                                "2.Indus-Collecte propose une collecte et un traitement adaptés à ces types de déchets.\n" +
-                                "" +
-                                "B.Conformité réglementaire :\n" +
-                                "" +
-                                "1.La réglementation encadre strictement la gestion des déchets industriels afin de prévenir les risques environnementaux et sanitaires.\n" +
-                                "" +
-                                "2.Indus-Collecte assure que la collecte et l'élimination de ces déchets se fassent dans le respect de la réglementation en vigueur.\n" +
-                                "" +
-                                "C.Valorisation des ressources :\n" +
-                                "" +
-                                "" +
-                                "1.Certains déchets industriels peuvent être valorisés et réintégrés dans des processus de production.\n" +
-                                "" +
-                                "2.Indus-Collecte facilite cette valorisation en orientant les déchets vers les filières adaptées.\n" +
-                                "" +
-                                "Types de déchets traités par Indus-Collecte :\n" +
-                                "\n" +
-                                "" +
-                                "A.Déchets dangereux :\n" +
-                                "" +
-                                "1.Solvants, huiles usagées, peintures, acides, etc.\n" +
-                                "" +
-                                "2.Nécessitent une collecte et un traitement spécifiques.\n" +
-                                "" +
-                                "B.Déchets non dangereux :\n" +
-                                "" +
-                                "1.Papiers, cartons, plastiques, métaux, etc.\n" +
-                                "" +
-                                "2.Peuvent faire l'objet de recyclage ou de valorisation.\n" +
-                                "" +
-                                "C.Déchets inertes :\n" +
-                                "" +
-                                "1.Gravats, terres, sables, etc.\n" +
-                                "" +
-                                "2.Peuvent être réutilisés dans des travaux de construction.\n" +
-                                "" +
-                                "D.Déchets spéciaux :\n" +
-                                "" +
-                                "1.Déchets d'équipements électriques et électroniques (DEEE)\n" +
-                                "" +
-                                "2.Véhicules hors d'usage (VHU) ",
-                        color = Color.Black,
-                        fontFamily = FontFamily.Default,
-                        textAlign = TextAlign.Justify
-                    )
-                }
+                Text(
+
+                    text = "Le bio-recyclage joue donc un rôle essentiel dans la gestion durable des déchets en valorisant les ressources organiques tout en réduisant leur impact environnemental." +
+                            "Les raisons importantes pour le bio-recyclage sont les suivantes :" +
+                            "A.Réduction des déchets organiques enfouis :\n" +
+                            "1.Les déchets organiques comme les restes alimentaires et les déchets de jardin représentent une part importante des déchets ménagers.\n" +
+                            "2.Leur enfouissement en décharge contribue à la production de méthane, un gaz à effet de serre puissant.\n" +
+                            "3.Le bio-recyclage permet de détourner ces déchets organiques des sites d'enfouissement.\n" +
+                            "" +
+                            "B.alorisation des déchets organiques :\n" +
+                            "1.Par le compostage ou la méthanisation, les déchets organiques sont transformés en ressources utiles.\n" +
+                            "2.Le compost produit peut être utilisé pour fertiliser les sols et améliorer la qualité des terres agricoles ou des espaces verts.\n" +
+                            "3.Le biogaz issu de la méthanisation peut être valorisé pour produire de l'énergie renouvelable.\n" +
+                            "" +
+                            "C.Économie circulaire et réduction des impacts :\n" +
+                            "1.Le bio-recyclage s'inscrit dans une logique d'économie circulaire, en réintégrant les nutriments des déchets organiques dans les cycles naturels.\n" +
+                            "2.Cela permet de réduire les besoins en engrais chimiques et les impacts liés à leur production.\n" +
+                            "3.De plus, le traitement des déchets organiques par compostage ou méthanisation a un impact environnemental moindre que l'enfouissement ou l'incinération.\n" +
+                            "" +
+                            "Les principaux types de déchets traités par le bio-recyclage sont :\n" +
+                            "\n" +
+                            "1.Restes alimentaires :\n" +
+                            "2.Restes de repas, fruits et légumes, épluchures, etc.\n" +
+                            "3.Déchets de jardin :\n" +
+                            "4.Tonte de pelouse, feuilles mortes, branches, fleurs fanées, etc.\n" +
+                            "5.Autres déchets organiques :\n" +
+                            "6.Sciures de bois, litières animales, etc.",
+                    color = Color.Black,
+                    fontFamily = FontFamily.Default,
+                    textAlign = TextAlign.Justify
+
+                )
             }
         }
-    }
 
-    @Composable
-    fun MyApp() {
-        val navController = rememberNavController()
 
-        NavHost(navController, startDestination = "main") {
-            composable("main") { MainScreen(navController) }
-            composable("interface1") { Interface1() }
-            composable("interface2") { Interface2() }
-            composable("interface3") { Interface3() }
-            composable("interface4") { Interface4() }
-            composable("interface5") { Interface5() }
+
+        @Composable
+        fun Interface3() {
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(color = Color(0xFFF2F2F2)) // Fond gris clair
+            )
+            // Image(painter = painterResource (images__8_), contentDescription =null )
+            Column(
+                modifier = Modifier.fillMaxSize(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Box(
+                    modifier = Modifier
+                        .size(200.dp)
+                        .background(
+                            color = Color(0xFF4CAF50), // Vert écologique
+                            shape = RoundedCornerShape(16.dp) // Coins arrondis
+                        ),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Image(
+                        painter = painterResource(id = images__7_),
+                        contentDescription = "Image de l'éco-collecte",
+                        modifier = Modifier.size(180.dp) // Ajuster la taille de l'image selon vos besoins
+                    )
+                }
+                Spacer(modifier = Modifier.height(16.dp))
+                Text(
+                    text = "Le COMPST-PLUS permet donc de valoriser localement les déchets organiques en produisant un compost de qualité, tout en favorisant l'implication et la sensibilisation des citoyens." +
+                            "Voici les raisons importantes pour le service de compost+ et les types de déchets qu'il traite :\n" +
+                            "\n" +
+                            "Raisons importantes du compost-plus :\n" +
+                            "\n" +
+                            "A.compostage de proximité :\n" +
+                            "" +
+                            "1.Le compost+ permet aux citoyens de composter leurs déchets organiques à l'échelle locale, dans leur quartier ou leur communauté.\n" +
+                            "" +
+                            "2.Cela réduit les coûts et l'impact environnemental liés au transport des déchets vers des sites de compostage centralisés.\n" +
+                            "" +
+                            "B.Production de compost de qualité :\n" +
+                            "" +
+                            "1.Le compost+ valorise les déchets organiques en produisant du compost de haute qualité, adapté aux besoins des espaces verts et de l'agriculture urbaine.\n" +
+                            "" +
+                            "2.Ce compost local peut être facilement réinjecté dans les cycles de production alimentaire et d'entretien des espaces verts de proximité.\n" +
+                            "" +
+                            "C.Sensibilisation et éducation :\n" +
+                            "" +
+                            "1.Le compost+ implique directement les citoyens dans le processus de gestion des déchets organiques.\n" +
+                            "" +
+                            "2.Cela permet de les sensibiliser à l'importance du compostage et de l'économie circulaire.\n" +
+                            "" +
+                            "Types de déchets traités par le compost-plus :\n" +
+                            "\n" +
+                            "1.Restes alime2ntaires :\n" +
+                            "" +
+                            "2.Épluchures, restes de repas, fruits et légumes\n" +
+                            "" +
+                            "3.Exclusion des viandes, poi2ssons et produits laitiers\n" +
+                            "" +
+                            "4.Déchets de jardin :\n" +
+
+                            "" +
+                            "5.Tonte de pelouse, feuilles mortes, fleurs fanées\n" +
+                            "" +
+                            "6.Petits branchages et résidus de taille\n" +
+                            "" +
+                            "D.Autres déchets organiques :\n" +
+                            "" +
+                            "1.Serviettes en papier, mouchoirs\n" +
+                            "" +
+                            "2.Litières végétales pour animaux",
+                    color = Color.Black,
+                    fontFamily = FontFamily.Default,
+                    textAlign = TextAlign.Justify
+                )
+            }
         }
-    }
+
+
+        @Composable
+        fun Interface4() {
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(color = Color(0xFFF2F2F2)) // Fond gris clair
+            )
+            //Image(painter = painterResource (images__10_), contentDescription =null )
+            Column(
+                modifier = Modifier.fillMaxSize(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Box(
+                    modifier = Modifier
+                        .size(200.dp)
+                        .background(
+                            color = Color(0xFF4CAF50), // Vert écologique
+                            shape = RoundedCornerShape(16.dp) // Coins arrondis
+                        ),
+                    contentAlignment = Alignment.Center
+                ) {
+
+                    Image(
+                        painter = painterResource(id = images__2_),
+                        contentDescription = "Image de l'éco-collecte",
+                        modifier = Modifier.size(180.dp) // Ajuster la taille de l'image selon vos besoins
+                    )
+                }
+                Spacer(modifier = Modifier.height(16.dp))
+
+                Text(
+                    text = "Le Rénov-recyclage joue donc un rôle essentiel dans la gestion durable des déchets du secteur de la construction et de la rénovation, en favorisant le réemploi et le recyclage des matériaux." +
+                            "" +
+                            "Voici les raisons importantes pour le service de Rénov-recyclage et les types de déchets qu'il traite :\n" +
+                            "\n" +
+                            "Raisons importantes du Rénov-recyclage :\n" +
+                            "\n" +
+                            "A.Détournement des déchets de construction et rénovation des sites d'enfouissement :\n" +
+                            "1.Les déchets de construction et de rénovation représentent une part importante des déchets générés.\n" +
+                            "2.Leur enfouissement en décharge occupe beaucoup d'espace et a un impact environnemental élevé.\n" +
+                            "3.Le Rénov-recyclage permet de les récupérer et de les valoriser.\n" +
+                            "" +
+                            "" +
+                            "B.Réintégration des matériaux dans de nouveaux produits :\n" +
+                            "" +
+                            "" +
+                            "1.Les matériaux récupérés sont triés, transformés et réintégrés dans la production de nouveaux produits.\n" +
+                            "" +
+                            "2.Cela permet de réduire l'utilisation de matières premières vierges et s'inscrit dans une logique d'économie circulaire.\n" +
+                            "" +
+                            "" +
+                            "C.Optimisation de l'utilisation des ressources :\n" +
+                            "" +
+                            "1.Le Rénov-recyclage favorise une meilleure gestion et une valorisation des ressources issues du secteur de la construction.\n" +
+                            "" +
+                            "2.Cela contribue à l'utilisation durable des matériaux et à la réduction des déchets.\n" +
+                            "" +
+                            "Types de déchets traités par le Rénov-recyclage :\n" +
+                            "\n" +
+                            "A.Matériaux de construction :\n" +
+                            "" +
+                            "1.Bois (poutrelles, planches, contreplaqué, etc.)\n" +
+                            "" +
+                            "2.Métaux (ferreux et non ferreux)\n" +
+                            "" +
+                            "3.Plastiques (tuyaux, profilés, etc.)\n" +
+                            "" +
+                            "4.Carrelages, céramiques, tuiles\n" +
+                            "" +
+                            "B.Matériaux de rénovation :\n" +
+                            "" +
+                            "1.Fenêtres, portes, parquets\n" +
+                            "" +
+                            "2.Isolants (laine de verre, polystyrène, etc.)\n" +
+                            "" +
+                            "3.Plâtre, cloisons sèches\n" +
+                            "" +
+                            "4.Câbles électriques\n" +
+                            "" +
+                            "C.Autres déchets de chantier :\n" +
+                            "" +
+                            "1.Gravats, sables, terres\n" +
+                            "" +
+                            "2.Emballages (cartons, films plastiques) ",
+                    color = Color.Black,
+                    fontFamily = FontFamily.Default,
+                    textAlign = TextAlign.Justify
+
+                )
+            }
+        }
+
+
+        @Composable
+        fun Interface5() {
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(color = Color(0xFFF2F2F2)) // Fond gris clair
+            )
+            // Image(painter = painterResource (images__8_), contentDescription =null )
+            Column(
+                modifier = Modifier.fillMaxSize(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Box(
+                    modifier = Modifier
+                        .size(200.dp)
+                        .background(
+                            color = Color(0xFF4CAF50), // Vert écologique
+                            shape = RoundedCornerShape(16.dp) // Coins arrondis
+                        ),
+                    contentAlignment = Alignment.Center
+                ) {
+
+                    Image(
+                        painter = painterResource(id = images__9_),
+                        contentDescription = "Image de l'éco-collecte",
+                        modifier = Modifier.size(180.dp) // Ajuster la taille de l'image selon vos besoins
+                    )
+                }
+                Spacer(modifier = Modifier.height(16.dp))
+
+
+                Text(
+                    text = "Indus-Collecte joue donc un rôle essentiel dans la gestion responsable et durable des déchets industriels, en assurant leur collecte, leur tri et leur orientation vers les filières de valorisation ou d'élimination adaptées." +
+                            " Voici les raisons importantes du service Indus-Collecte et les types de déchets qu'il traite :\n" +
+                            "\n" +
+                            "Raisons importantes d'Indus-Collecte :\n" +
+                            "\n" +
+                            "" +
+                            "" +
+                            "A.Collecte spécialisée des déchets industriels :\n" +
+                            "" +
+                            "1.Les déchets industriels nécessitent une gestion particulière en raison de leur nature et de leur volume.\n" +
+                            "" +
+                            "2.Indus-Collecte propose une collecte et un traitement adaptés à ces types de déchets.\n" +
+                            "" +
+                            "B.Conformité réglementaire :\n" +
+                            "" +
+                            "1.La réglementation encadre strictement la gestion des déchets industriels afin de prévenir les risques environnementaux et sanitaires.\n" +
+                            "" +
+                            "2.Indus-Collecte assure que la collecte et l'élimination de ces déchets se fassent dans le respect de la réglementation en vigueur.\n" +
+                            "" +
+                            "C.Valorisation des ressources :\n" +
+                            "" +
+                            "" +
+                            "1.Certains déchets industriels peuvent être valorisés et réintégrés dans des processus de production.\n" +
+                            "" +
+                            "2.Indus-Collecte facilite cette valorisation en orientant les déchets vers les filières adaptées.\n" +
+                            "" +
+                            "Types de déchets traités par Indus-Collecte :\n" +
+                            "\n" +
+                            "" +
+                            "A.Déchets dangereux :\n" +
+                            "" +
+                            "1.Solvants, huiles usagées, peintures, acides, etc.\n" +
+                            "" +
+                            "2.Nécessitent une collecte et un traitement spécifiques.\n" +
+                            "" +
+                            "B.Déchets non dangereux :\n" +
+                            "" +
+                            "1.Papiers, cartons, plastiques, métaux, etc.\n" +
+                            "" +
+                            "2.Peuvent faire l'objet de recyclage ou de valorisation.\n" +
+                            "" +
+                            "C.Déchets inertes :\n" +
+                            "" +
+                            "1.Gravats, terres, sables, etc.\n" +
+                            "" +
+                            "2.Peuvent être réutilisés dans des travaux de construction.\n" +
+                            "" +
+                            "D.Déchets spéciaux :\n" +
+                            "" +
+                            "1.Déchets d'équipements électriques et électroniques (DEEE)\n" +
+                            "" +
+                            "2.Véhicules hors d'usage (VHU) ",
+                    color = Color.Black,
+                    fontFamily = FontFamily.Default,
+                    textAlign = TextAlign.Justify
+                )
+            }
+        }
+
+
+        @Composable
+        fun MyApp() {
+            val navController = rememberNavController()
+
+            NavHost(navController, startDestination = "main") {
+                composable("main") { MainScreen(navController) }
+                composable("interface1") { Interface1() }
+                composable("interface2") { Interface2() }
+                composable("interface3") { Interface3() }
+                composable("interface4") { Interface4() }
+                composable("interface5") { Interface5() }
+            }
+        }
+
+
+
 
