@@ -442,7 +442,7 @@ fun Interface1() {
                         modifier = Modifier.size(180.dp) // Ajuster la taille de l'image selon vos besoins
                     )
                 }
-                Spacer(modifier = Modifier.height(16.dp))
+                Spacer(modifier = Modifier.height(20.dp))
 
                 Text(
 
@@ -507,7 +507,7 @@ fun Interface1() {
                         modifier = Modifier.size(180.dp) // Ajuster la taille de l'image selon vos besoins
                     )
                 }
-                Spacer(modifier = Modifier.height(16.dp))
+                Spacer(modifier = Modifier.height(20.dp))
                 Text(
                     text = "Le Compst-plus  permet donc de valoriser localement les déchets organiques en produisant un compost de qualité, tout en favorisant l'implication et la sensibilisation des citoyens." +
                             "Voici les raisons importantes pour le service de compost+ et les types de déchets qu'il traite :\n\n" +
@@ -640,7 +640,7 @@ fun Interface1() {
                         modifier = Modifier.size(180.dp) // Ajuster la taille de l'image selon vos besoins
                     )
                 }
-                Spacer(modifier = Modifier.height(16.dp))
+                Spacer(modifier = Modifier.height(20.dp))
 
 
                 Text(
