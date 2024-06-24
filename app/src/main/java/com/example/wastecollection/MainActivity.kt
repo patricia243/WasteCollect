@@ -692,17 +692,17 @@ fun Interface1() {
 
                 Text(
                     text = "Indus-Collecte joue donc un rôle essentiel dans la gestion responsable et durable des déchets industriels, en assurant leur collecte, leur tri et leur orientation vers les filières de valorisation ou d'élimination adaptées." +
-                            " Voici les raisons importantes du service Indus-Collecte et les types de déchets qu'il traite :\n\n" +
+                            " Voici les raisons importantes du service Indus-Collecte et les types de déchets qu'il traite :\n" +
                             "Raisons importantes d'Indus-Collecte :\n" +
                             "A.Collecte spécialisée des déchets industriels :\n" +
-                            "1.Les déchets industriels nécessitent une gestion particulière en raison de leur nature et de leur volume.\n\n" +
-                            "2.Indus-Collecte propose une collecte et un traitement adaptés à ces types de déchets.\n\n" +
+                            "1.Les déchets industriels nécessitent une gestion particulière en raison de leur nature et de leur volume.\n" +
+                            "2.Indus-Collecte propose une collecte et un traitement adaptés à ces types de déchets.\n" +
                             "B.Conformité réglementaire :\n" +
-                            "1.La réglementation encadre strictement la gestion des déchets industriels afin de prévenir les risques environnementaux et sanitaires.\n\n" +
-                            "2.Indus-Collecte assure que la collecte et l'élimination de ces déchets se fassent dans le respect de la réglementation en vigueur.\n\n" +
+                            "1.La réglementation encadre strictement la gestion des déchets industriels afin de prévenir les risques environnementaux et sanitaires.\n" +
+                            "2.Indus-Collecte assure que la collecte et l'élimination de ces déchets se fassent dans le respect de la réglementation en vigueur.\n" +
                             "C.Valorisation des ressources :\n" +
-                            "1.Certains déchets industriels peuvent être valorisés et réintégrés dans des processus de production.\n\n" +
-                            "2.Indus-Collecte facilite cette valorisation en orientant les déchets vers les filières adaptées.\n\n" +
+                            "1.Certains déchets industriels peuvent être valorisés et réintégrés dans des processus de production.\n" +
+                            "2.Indus-Collecte facilite cette valorisation en orientant les déchets vers les filières adaptées.\n" +
                             "Types de déchets traités par Indus-Collecte :\n" +
                             "A.Déchets dangereux :\n" +
                             "1.Solvants, huiles usagées, peintures, acides, etc.\n" +
@@ -711,10 +711,10 @@ fun Interface1() {
                             "1.Papiers, cartons, plastiques, métaux, etc.\n" +
                             "2.Peuvent faire l'objet de recyclage ou de valorisation.\n" +
                             "C.Déchets inertes :\n" +
-                            "1.Gravats, terres, sables, etc.\n\n" +
+                            "1.Gravats, terres, sables, etc.\n" +
                             "2.Peuvent être réutilisés dans des travaux de construction"+
-                            "D.Déchets spéciaux :\n\n" +
-                            "1.Déchets d'équipements électriques et électroniques (DEEE)\n\n" +
+                            "D.Déchets spéciaux :\n" +
+                            "1.Déchets d'équipements électriques et électroniques (DEEE)\n" +
                             "2.Véhicules hors d'usage (VHU) ",
                     color = Color.Black,
                     fontFamily = FontFamily.Default,
