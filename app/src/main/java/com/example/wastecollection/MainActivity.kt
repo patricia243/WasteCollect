@@ -703,9 +703,16 @@ fun Interface(navController: NavHostController){
             horizontalAlignment = Alignment.CenterHorizontally
 
         ){
-            Text(text = "Service de collecte")
+            Text(
+                text = "1.Service de collecte et elimination de dechets \n\n"
 
+            )
             Spacer(modifier = Modifier.padding(1.dp))
+
+            Text(
+                text = " 2.Contacter nos services",
+
+                )
 
             Image(
                 painter = painterResource(id = images__5_ )
@@ -714,9 +721,9 @@ fun Interface(navController: NavHostController){
             Spacer(modifier = Modifier.padding(1.dp))
 
             Button(onClick = {
-                navController.navigate("Commander")
+                navController.navigate("Contact")
             }) {
-                Text(text = "Commander")
+                Text(text = "Contact")
             }
         }
 
@@ -725,7 +732,8 @@ fun Interface(navController: NavHostController){
 }
 
 @Composable
-fun Commander(){
+fun Contact(){
+
 
 }
 
@@ -741,7 +749,7 @@ fun Commander(){
                 composable("interface4") { Interface4() }
                 composable("interface5") { Interface5() }
                 composable("interface") { Interface(navController) }
-                composable("Commander") { Commander() }
+                composable("Contact") { (Contact()) }
             }
         }
 
