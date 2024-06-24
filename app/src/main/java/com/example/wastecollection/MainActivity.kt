@@ -11,7 +11,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 
 import androidx.compose.foundation.layout.Column
-
+import androidx.compose.foundation.layout.Row
 
 
 import androidx.compose.foundation.layout.Spacer
@@ -344,6 +344,18 @@ fun MainScreen(navController: NavHostController) {
                     .size(width = 200.dp, height = 200.dp)
             )
         }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+
+        Button(
+            onClick = {
+                navController.navigate("Interface")
+            }
+        ) {
+            Text(text = "Commander")
+        }
+
     }
 
         }
@@ -677,6 +689,45 @@ fun Interface1() {
             }
         }
 
+@Composable
+fun Interface(navController: NavHostController){
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+
+        Column(
+            modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+
+        ){
+            Text(text = "Service de collecte")
+
+            Spacer(modifier = Modifier.padding(1.dp))
+
+            Image(
+                painter = painterResource(id = images__5_ )
+                , contentDescription = "", modifier = Modifier.size(200.dp))
+
+            Spacer(modifier = Modifier.padding(1.dp))
+
+            Button(onClick = {
+                navController.navigate("Commander")
+            }) {
+                Text(text = "Commander")
+            }
+        }
+
+
+    }
+}
+
+@Composable
+fun Commander(){
+
+}
 
         @Composable
         fun MyApp() {
@@ -689,6 +740,8 @@ fun Interface1() {
                 composable("interface3") { Interface3() }
                 composable("interface4") { Interface4() }
                 composable("interface5") { Interface5() }
+                composable("interface") { Interface(navController) }
+                composable("Commander") { Commander() }
             }
         }
 
