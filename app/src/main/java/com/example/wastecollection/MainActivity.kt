@@ -448,27 +448,27 @@ fun Interface1() {
 
                     text = "Le bio-recyclage joue donc un rôle essentiel dans la gestion durable des déchets en valorisant les ressources organiques tout en réduisant leur impact environnemental." +
                             "Les raisons importantes pour le bio-recyclage sont les suivantes :" +
-                            "A.Réduction des déchets organiques enfouis :\n" +
-                            "1.Les déchets organiques comme les restes alimentaires et les déchets de jardin représentent une part importante des déchets ménagers.\n" +
-                            "2.Leur enfouissement en décharge contribue à la production de méthane, un gaz à effet de serre puissant.\n" +
-                            "3.Le bio-recyclage permet de détourner ces déchets organiques des sites d'enfouissement.\n" +
+                            "A.Réduction des déchets organiques enfouis :\n\n" +
+                            "1.Les déchets organiques comme les restes alimentaires et les déchets de jardin représentent une part importante des déchets ménagers.\n\n" +
+                            "2.Leur enfouissement en décharge contribue à la production de méthane, un gaz à effet de serre puissant.\n\n" +
+                            "3.Le bio-recyclage permet de détourner ces déchets organiques des sites d'enfouissement.\n\n" +
                             "" +
-                            "B.alorisation des déchets organiques :\n" +
-                            "1.Par le compostage ou la méthanisation, les déchets organiques sont transformés en ressources utiles.\n" +
-                            "2.Le compost produit peut être utilisé pour fertiliser les sols et améliorer la qualité des terres agricoles ou des espaces verts.\n" +
-                            "3.Le biogaz issu de la méthanisation peut être valorisé pour produire de l'énergie renouvelable.\n" +
+                            "B.alorisation des déchets organiques :\n\n" +
+                            "1.Par le compostage ou la méthanisation, les déchets organiques sont transformés en ressources utiles.\n\n" +
+                            "2.Le compost produit peut être utilisé pour fertiliser les sols et améliorer la qualité des terres agricoles ou des espaces verts.\n\n" +
+                            "3.Le biogaz issu de la méthanisation peut être valorisé pour produire de l'énergie renouvelable.\n\n" +
                             "" +
-                            "C.Économie circulaire et réduction des impacts :\n" +
-                            "1.Le bio-recyclage s'inscrit dans une logique d'économie circulaire, en réintégrant les nutriments des déchets organiques dans les cycles naturels.\n" +
-                            "2.Cela permet de réduire les besoins en engrais chimiques et les impacts liés à leur production.\n" +
-                            "3.De plus, le traitement des déchets organiques par compostage ou méthanisation a un impact environnemental moindre que l'enfouissement ou l'incinération.\n" +
+                            "C.Économie circulaire et réduction des impacts :\n\n" +
+                            "1.Le bio-recyclage s'inscrit dans une logique d'économie circulaire, en réintégrant les nutriments des déchets organiques dans les cycles naturels.\n\n" +
+                            "2.Cela permet de réduire les besoins en engrais chimiques et les impacts liés à leur production.\n\n" +
+                            "3.De plus, le traitement des déchets organiques par compostage ou méthanisation a un impact environnemental moindre que l'enfouissement ou l'incinération.\n\n" +
                             "" +
-                            "Les principaux types de déchets traités par le bio-recyclage sont :\n" +
+                            "Les principaux types de déchets traités par le bio-recyclage sont :\n\n" +
                             "\n" +
                             "1.Restes alimentaires :\n" +
-                            "2.Restes de repas, fruits et légumes, épluchures, etc.\n" +
+                            "2.Restes de repas, fruits et légumes, épluchures, etc.\n\n" +
                             "3.Déchets de jardin :\n" +
-                            "4.Tonte de pelouse, feuilles mortes, branches, fleurs fanées, etc.\n" +
+                            "4.Tonte de pelouse, feuilles mortes, branches, fleurs fanées, etc.\n\n" +
                             "5.Autres déchets organiques :\n" +
                             "6.Sciures de bois, litières animales, etc.",
                     color = Color.Black,
@@ -514,46 +514,46 @@ fun Interface1() {
                 Spacer(modifier = Modifier.height(16.dp))
                 Text(
                     text = "Le COMPST-PLUS permet donc de valoriser localement les déchets organiques en produisant un compost de qualité, tout en favorisant l'implication et la sensibilisation des citoyens." +
-                            "Voici les raisons importantes pour le service de compost+ et les types de déchets qu'il traite :\n" +
+                            "Voici les raisons importantes pour le service de compost+ et les types de déchets qu'il traite :\n\n" +
                             "\n" +
-                            "Raisons importantes du compost-plus :\n" +
+                            "Raisons importantes du compost-plus :\n\n" +
                             "\n" +
-                            "A.compostage de proximité :\n" +
+                            "A.compostage de proximité :\n\n" +
                             "" +
-                            "1.Le compost+ permet aux citoyens de composter leurs déchets organiques à l'échelle locale, dans leur quartier ou leur communauté.\n" +
+                            "1.Le compost+ permet aux citoyens de composter leurs déchets organiques à l'échelle locale, dans leur quartier ou leur communauté.\n\n" +
                             "" +
-                            "2.Cela réduit les coûts et l'impact environnemental liés au transport des déchets vers des sites de compostage centralisés.\n" +
+                            "2.Cela réduit les coûts et l'impact environnemental liés au transport des déchets vers des sites de compostage centralisés.\n\n" +
                             "" +
-                            "B.Production de compost de qualité :\n" +
+                            "B.Production de compost de qualité :\n\n" +
                             "" +
-                            "1.Le compost+ valorise les déchets organiques en produisant du compost de haute qualité, adapté aux besoins des espaces verts et de l'agriculture urbaine.\n" +
+                            "1.Le compost+ valorise les déchets organiques en produisant du compost de haute qualité, adapté aux besoins des espaces verts et de l'agriculture urbaine.\n\n" +
                             "" +
-                            "2.Ce compost local peut être facilement réinjecté dans les cycles de production alimentaire et d'entretien des espaces verts de proximité.\n" +
+                            "2.Ce compost local peut être facilement réinjecté dans les cycles de production alimentaire et d'entretien des espaces verts de proximité.\n\n" +
                             "" +
-                            "C.Sensibilisation et éducation :\n" +
+                            "C.Sensibilisation et éducation :\n\n" +
                             "" +
-                            "1.Le compost+ implique directement les citoyens dans le processus de gestion des déchets organiques.\n" +
+                            "1.Le compost+ implique directement les citoyens dans le processus de gestion des déchets organiques.\n\n" +
                             "" +
-                            "2.Cela permet de les sensibiliser à l'importance du compostage et de l'économie circulaire.\n" +
+                            "2.Cela permet de les sensibiliser à l'importance du compostage et de l'économie circulaire.\n\n" +
                             "" +
-                            "Types de déchets traités par le compost-plus :\n" +
+                            "Types de déchets traités par le compost-plus :\n\n" +
                             "\n" +
-                            "1.Restes alime2ntaires :\n" +
+                            "1.Restes alime2ntaires :\n\n" +
                             "" +
-                            "2.Épluchures, restes de repas, fruits et légumes\n" +
+                            "2.Épluchures, restes de repas, fruits et légumes\n\n" +
                             "" +
-                            "3.Exclusion des viandes, poi2ssons et produits laitiers\n" +
+                            "3.Exclusion des viandes, poi2ssons et produits laitiers\n\n" +
                             "" +
-                            "4.Déchets de jardin :\n" +
+                            "4.Déchets de jardin :\n\n" +
 
                             "" +
-                            "5.Tonte de pelouse, feuilles mortes, fleurs fanées\n" +
+                            "5.Tonte de pelouse, feuilles mortes, fleurs fanées\n\n" +
                             "" +
-                            "6.Petits branchages et résidus de taille\n" +
+                            "6.Petits branchages et résidus de taille\n\n" +
                             "" +
-                            "D.Autres déchets organiques :\n" +
+                            "D.Autres déchets organiques :\n\n" +
                             "" +
-                            "1.Serviettes en papier, mouchoirs\n" +
+                            "1.Serviettes en papier, mouchoirs\n\n" +
                             "" +
                             "2.Litières végétales pour animaux",
                     color = Color.Black,
@@ -600,55 +600,55 @@ fun Interface1() {
                 Text(
                     text = "Le Rénov-recyclage joue donc un rôle essentiel dans la gestion durable des déchets du secteur de la construction et de la rénovation, en favorisant le réemploi et le recyclage des matériaux." +
                             "" +
-                            "Voici les raisons importantes pour le service de Rénov-recyclage et les types de déchets qu'il traite :\n" +
+                            "Voici les raisons importantes pour le service de Rénov-recyclage et les types de déchets qu'il traite :\n\n" +
                             "\n" +
-                            "Raisons importantes du Rénov-recyclage :\n" +
+                            "Raisons importantes du Rénov-recyclage :\n\n" +
                             "\n" +
-                            "A.Détournement des déchets de construction et rénovation des sites d'enfouissement :\n" +
-                            "1.Les déchets de construction et de rénovation représentent une part importante des déchets générés.\n" +
-                            "2.Leur enfouissement en décharge occupe beaucoup d'espace et a un impact environnemental élevé.\n" +
-                            "3.Le Rénov-recyclage permet de les récupérer et de les valoriser.\n" +
+                            "A.Détournement des déchets de construction et rénovation des sites d'enfouissement :\n\n" +
+                            "1.Les déchets de construction et de rénovation représentent une part importante des déchets générés.\n\n" +
+                            "2.Leur enfouissement en décharge occupe beaucoup d'espace et a un impact environnemental élevé.\n\n" +
+                            "3.Le Rénov-recyclage permet de les récupérer et de les valoriser.\n\n" +
                             "" +
                             "" +
-                            "B.Réintégration des matériaux dans de nouveaux produits :\n" +
+                            "B.Réintégration des matériaux dans de nouveaux produits :\n\n" +
                             "" +
                             "" +
-                            "1.Les matériaux récupérés sont triés, transformés et réintégrés dans la production de nouveaux produits.\n" +
+                            "1.Les matériaux récupérés sont triés, transformés et réintégrés dans la production de nouveaux produits.\n\n" +
                             "" +
-                            "2.Cela permet de réduire l'utilisation de matières premières vierges et s'inscrit dans une logique d'économie circulaire.\n" +
+                            "2.Cela permet de réduire l'utilisation de matières premières vierges et s'inscrit dans une logique d'économie circulaire.\n\n" +
                             "" +
                             "" +
-                            "C.Optimisation de l'utilisation des ressources :\n" +
+                            "C.Optimisation de l'utilisation des ressources :\n\n" +
                             "" +
-                            "1.Le Rénov-recyclage favorise une meilleure gestion et une valorisation des ressources issues du secteur de la construction.\n" +
+                            "1.Le Rénov-recyclage favorise une meilleure gestion et une valorisation des ressources issues du secteur de la construction.\n\n" +
                             "" +
-                            "2.Cela contribue à l'utilisation durable des matériaux et à la réduction des déchets.\n" +
+                            "2.Cela contribue à l'utilisation durable des matériaux et à la réduction des déchets.\n\n" +
                             "" +
-                            "Types de déchets traités par le Rénov-recyclage :\n" +
+                            "Types de déchets traités par le Rénov-recyclage :\n\n" +
                             "\n" +
-                            "A.Matériaux de construction :\n" +
+                            "A.Matériaux de construction :\n\n" +
                             "" +
-                            "1.Bois (poutrelles, planches, contreplaqué, etc.)\n" +
+                            "1.Bois (poutrelles, planches, contreplaqué, etc.)\n\n" +
                             "" +
-                            "2.Métaux (ferreux et non ferreux)\n" +
+                            "2.Métaux (ferreux et non ferreux)\n\n" +
                             "" +
-                            "3.Plastiques (tuyaux, profilés, etc.)\n" +
+                            "3.Plastiques (tuyaux, profilés, etc.)\n\n" +
                             "" +
-                            "4.Carrelages, céramiques, tuiles\n" +
+                            "4.Carrelages, céramiques, tuiles\n\n" +
                             "" +
-                            "B.Matériaux de rénovation :\n" +
+                            "B.Matériaux de rénovation :\n\n" +
                             "" +
-                            "1.Fenêtres, portes, parquets\n" +
+                            "1.Fenêtres, portes, parquets\n\n" +
                             "" +
-                            "2.Isolants (laine de verre, polystyrène, etc.)\n" +
+                            "2.Isolants (laine de verre, polystyrène, etc.)\n\n" +
                             "" +
-                            "3.Plâtre, cloisons sèches\n" +
+                            "3.Plâtre, cloisons sèches\n\n" +
                             "" +
-                            "4.Câbles électriques\n" +
+                            "4.Câbles électriques\n\n" +
                             "" +
-                            "C.Autres déchets de chantier :\n" +
+                            "C.Autres déchets de chantier :\n\n" +
                             "" +
-                            "1.Gravats, sables, terres\n" +
+                            "1.Gravats, sables, terres\n\n" +
                             "" +
                             "2.Emballages (cartons, films plastiques) ",
                     color = Color.Black,
@@ -696,56 +696,56 @@ fun Interface1() {
 
                 Text(
                     text = "Indus-Collecte joue donc un rôle essentiel dans la gestion responsable et durable des déchets industriels, en assurant leur collecte, leur tri et leur orientation vers les filières de valorisation ou d'élimination adaptées." +
-                            " Voici les raisons importantes du service Indus-Collecte et les types de déchets qu'il traite :\n" +
-                            "\n" +
-                            "Raisons importantes d'Indus-Collecte :\n" +
-                            "\n" +
+                            " Voici les raisons importantes du service Indus-Collecte et les types de déchets qu'il traite :\n\n" +
+                            "\n\n" +
+                            "Raisons importantes d'Indus-Collecte :\n\n" +
+                            "\n\n" +
                             "" +
                             "" +
-                            "A.Collecte spécialisée des déchets industriels :\n" +
+                            "A.Collecte spécialisée des déchets industriels :\n\n" +
                             "" +
-                            "1.Les déchets industriels nécessitent une gestion particulière en raison de leur nature et de leur volume.\n" +
+                            "1.Les déchets industriels nécessitent une gestion particulière en raison de leur nature et de leur volume.\n\n" +
                             "" +
-                            "2.Indus-Collecte propose une collecte et un traitement adaptés à ces types de déchets.\n" +
+                            "2.Indus-Collecte propose une collecte et un traitement adaptés à ces types de déchets.\n\n" +
                             "" +
-                            "B.Conformité réglementaire :\n" +
+                            "B.Conformité réglementaire :\n\n" +
                             "" +
-                            "1.La réglementation encadre strictement la gestion des déchets industriels afin de prévenir les risques environnementaux et sanitaires.\n" +
+                            "1.La réglementation encadre strictement la gestion des déchets industriels afin de prévenir les risques environnementaux et sanitaires.\n\n" +
                             "" +
-                            "2.Indus-Collecte assure que la collecte et l'élimination de ces déchets se fassent dans le respect de la réglementation en vigueur.\n" +
+                            "2.Indus-Collecte assure que la collecte et l'élimination de ces déchets se fassent dans le respect de la réglementation en vigueur.\n\n" +
                             "" +
-
-                            "C.Valorisation des ressources :\n" +
+                            "C.Valorisation des ressources :\n\n" +
                             "" +
                             "" +
-                            "1.Certains déchets industriels peuvent être valorisés et réintégrés dans des processus de production.\n" +
                             "" +
-                            "2.Indus-Collecte facilite cette valorisation en orientant les déchets vers les filières adaptées.\n" +
+                            "1.Certains déchets industriels peuvent être valorisés et réintégrés dans des processus de production.\n\n" +
                             "" +
-                            "Types de déchets traités par Indus-Collecte :\n" +
-                            "\n" +
+                            "2.Indus-Collecte facilite cette valorisation en orientant les déchets vers les filières adaptées.\n\n" +
                             "" +
-                            "A.Déchets dangereux :\n" +
+                            "Types de déchets traités par Indus-Collecte :\n\n" +
+                            "\n\n" +
                             "" +
-                            "1.Solvants, huiles usagées, peintures, acides, etc.\n" +
+                            "A.Déchets dangereux :\n\n" +
                             "" +
-                            "2.Nécessitent une collecte et un traitement spécifiques.\n" +
+                            "1.Solvants, huiles usagées, peintures, acides, etc.\n\n" +
                             "" +
-                            "B.Déchets non dangereux :\n" +
+                            "2.Nécessitent une collecte et un traitement spécifiques.\n\n" +
                             "" +
-                            "1.Papiers, cartons, plastiques, métaux, etc.\n" +
+                            "B.Déchets non dangereux :\n\n" +
                             "" +
-                            "2.Peuvent faire l'objet de recyclage ou de valorisation.\n" +
+                            "1.Papiers, cartons, plastiques, métaux, etc.\n\n" +
                             "" +
-                            "C.Déchets inertes :\n" +
+                            "2.Peuvent faire l'objet de recyclage ou de valorisation.\n\n" +
                             "" +
-                            "1.Gravats, terres, sables, etc.\n" +
+                            "C.Déchets inertes :\n\n" +
                             "" +
-                            "2.Peuvent être réutilisés dans des travaux de construction.\n" +
+                            "1.Gravats, terres, sables, etc.\n\n" +
                             "" +
-                            "D.Déchets spéciaux :\n" +
+                            "2.Peuvent être réutilisés dans des travaux de construction."
                             "" +
-                            "1.Déchets d'équipements électriques et électroniques (DEEE)\n" +
+                            "D.Déchets spéciaux :\n\n" +
+                            "" +
+                            "1.Déchets d'équipements électriques et électroniques (DEEE)\n\n" +
                             "" +
                             "2.Véhicules hors d'usage (VHU) ",
                     color = Color.Black,
