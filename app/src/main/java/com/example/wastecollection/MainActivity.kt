@@ -509,11 +509,11 @@ fun Interface1() {
                 }
                 Spacer(modifier = Modifier.height(16.dp))
                 Text(
-                    text = "Le COMPST-PLUS permet donc de valoriser localement les déchets organiques en produisant un compost de qualité, tout en favorisant l'implication et la sensibilisation des citoyens." +
+                    text = "Le Compst-plus  permet donc de valoriser localement les déchets organiques en produisant un compost de qualité, tout en favorisant l'implication et la sensibilisation des citoyens." +
                             "Voici les raisons importantes pour le service de compost+ et les types de déchets qu'il traite :\n\n" +
                             "Raisons importantes du compost-plus :\n\n" +
                             "A.compostage de proximité :\n\n" +
-                            "1.Le compost+ permet aux citoyens de composter leurs déchets organiques à l'échelle locale, dans leur quartier ou leur communauté.\n" +
+                            "1.Le compost-plus  permet aux citoyens de composter leurs déchets organiques à l'échelle locale, dans leur quartier ou leur communauté.\n" +
                             "2.Cela réduit les coûts et l'impact environnemental liés au transport des déchets vers des sites de compostage centralisés.\n\n" +
                             "B.Production de compost de qualité :\n\n" +
                             "1.Le compost+ valorise les déchets organiques en produisant du compost de haute qualité, adapté aux besoins des espaces verts et de l'agriculture urbaine.\n" +
