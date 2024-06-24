@@ -382,7 +382,7 @@ fun Interface1() {
             }
 
 
-            Spacer(modifier = Modifier.height(200.dp))
+            Spacer(modifier = Modifier.height(16.dp))
 
             // Texte descriptif de l'éco-collecte
             Text(
@@ -420,11 +420,13 @@ fun Interface1() {
                 .background(color = Color(0xFFF2F2F2)) // Fond gris clair
         )
 
-            Column(
-                modifier = Modifier.fillMaxSize(),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-            ) {
+        Column(
+            modifier = Modifier
+                .padding(horizontal = 16.dp)
+                .verticalScroll(rememberScrollState()),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
+        ) {
                 Box(
                     modifier = Modifier
                         .size(200.dp)
@@ -488,7 +490,9 @@ fun Interface1() {
             )
             // Image(painter = painterResource (images__8_), contentDescription =null )
             Column(
-                modifier = Modifier.fillMaxSize(),
+                modifier = Modifier
+                    .padding(horizontal = 16.dp)
+                    .verticalScroll(rememberScrollState()),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
@@ -569,7 +573,9 @@ fun Interface1() {
             )
             //Image(painter = painterResource (images__10_), contentDescription =null )
             Column(
-                modifier = Modifier.fillMaxSize(),
+                modifier = Modifier
+                    .padding(horizontal = 16.dp)
+                    .verticalScroll(rememberScrollState()),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
@@ -663,7 +669,9 @@ fun Interface1() {
             )
             // Image(painter = painterResource (images__8_), contentDescription =null )
             Column(
-                modifier = Modifier.fillMaxSize(),
+                modifier = Modifier
+                    .padding(horizontal = 16.dp)
+                    .verticalScroll(rememberScrollState()),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
@@ -706,6 +714,7 @@ fun Interface1() {
                             "" +
                             "2.Indus-Collecte assure que la collecte et l'élimination de ces déchets se fassent dans le respect de la réglementation en vigueur.\n" +
                             "" +
+
                             "C.Valorisation des ressources :\n" +
                             "" +
                             "" +
