@@ -449,26 +449,22 @@ fun Interface1() {
                     text = "Le bio-recyclage joue donc un rôle essentiel dans la gestion durable des déchets en valorisant les ressources organiques tout en réduisant leur impact environnemental." +
                             "Les raisons importantes pour le bio-recyclage sont les suivantes :" +
                             "A.Réduction des déchets organiques enfouis :\n\n" +
-                            "1.Les déchets organiques comme les restes alimentaires et les déchets de jardin représentent une part importante des déchets ménagers.\n\n" +
-                            "2.Leur enfouissement en décharge contribue à la production de méthane, un gaz à effet de serre puissant.\n\n" +
-                            "3.Le bio-recyclage permet de détourner ces déchets organiques des sites d'enfouissement.\n\n" +
-                            "" +
+                            "1.Les déchets organiques comme les restes alimentaires et les déchets de jardin représentent une part importante des déchets ménagers.\n" +
+                            "2.Leur enfouissement en décharge contribue à la production de méthane, un gaz à effet de serre puissant.\n" +
+                            "3.Le bio-recyclage permet de détourner ces déchets organiques des sites d'enfouissement.\n" +
                             "B.alorisation des déchets organiques :\n\n" +
-                            "1.Par le compostage ou la méthanisation, les déchets organiques sont transformés en ressources utiles.\n\n" +
-                            "2.Le compost produit peut être utilisé pour fertiliser les sols et améliorer la qualité des terres agricoles ou des espaces verts.\n\n" +
+                            "1.Par le compostage ou la méthanisation, les déchets organiques sont transformés en ressources utiles.\n" +
+                            "2.Le compost produit peut être utilisé pour fertiliser les sols et améliorer la qualité des terres agricoles ou des espaces verts.\n" +
                             "3.Le biogaz issu de la méthanisation peut être valorisé pour produire de l'énergie renouvelable.\n\n" +
-                            "" +
                             "C.Économie circulaire et réduction des impacts :\n\n" +
-                            "1.Le bio-recyclage s'inscrit dans une logique d'économie circulaire, en réintégrant les nutriments des déchets organiques dans les cycles naturels.\n\n" +
-                            "2.Cela permet de réduire les besoins en engrais chimiques et les impacts liés à leur production.\n\n" +
-                            "3.De plus, le traitement des déchets organiques par compostage ou méthanisation a un impact environnemental moindre que l'enfouissement ou l'incinération.\n\n" +
-                            "" +
+                            "1.Le bio-recyclage s'inscrit dans une logique d'économie circulaire, en réintégrant les nutriments des déchets organiques dans les cycles naturels.\n" +
+                            "2.Cela permet de réduire les besoins en engrais chimiques et les impacts liés à leur production.\n" +
+                            "3.De plus, le traitement des déchets organiques par compostage ou méthanisation a un impact environnemental moindre que l'enfouissement ou l'incinération.\n" +
                             "Les principaux types de déchets traités par le bio-recyclage sont :\n\n" +
-                            "\n" +
-                            "1.Restes alimentaires :\n" +
+                            "1.Restes alimentaires :\n\n" +
                             "2.Restes de repas, fruits et légumes, épluchures, etc.\n\n" +
-                            "3.Déchets de jardin :\n" +
-                            "4.Tonte de pelouse, feuilles mortes, branches, fleurs fanées, etc.\n\n" +
+                            "3.Déchets de jardin :\n\n" +
+                            "4.Tonte de pelouse, feuilles mortes, branches, fleurs fanées, etc.\n" +
                             "5.Autres déchets organiques :\n" +
                             "6.Sciures de bois, litières animales, etc.",
                     color = Color.Black,
